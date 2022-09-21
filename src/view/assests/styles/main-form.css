@@ -1,0 +1,32 @@
+.navBar{
+    -fx-background-color:linear-gradient(#72cfe8, #2CA0FE);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+
+}
+.background{
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+
+}
+
+.navOptionHighLight{
+   -fx-background-color: linear-gradient(to left top,#dcbcbc, #EE75FE);
+
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+
+}
+.navOption{
+    -fx-background-color: transparent;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+
+}
+
+.title-font{
+    -fx-font-family: Luminari, fantasy;
+}
+
+

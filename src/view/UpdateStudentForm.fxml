@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateStudentPane" prefHeight="457.0" prefWidth="733.0" styleClass="register-Student-Form" stylesheets="@assests/styles/Manage-Student.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateStudentFormController">
+   <children>
+      <VBox layoutX="26.0" layoutY="50.0" prefHeight="277.0" prefWidth="319.0">
+         <children>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtStudentId" editable="false" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="166.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="Student Id" />
+               </children>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtName" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="166.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="Student Name" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtNIC" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="25.0" prefWidth="242.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="NIC" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtdateOfBirth" layoutX="10.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="194.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="Date of birth" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="Gender" />
+                  <TextField fx:id="txtGender" editable="false" layoutX="22.0" layoutY="1.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="194.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtParent" layoutX="10.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="194.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="parentName" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtContact" layoutX="10.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="27.0" prefWidth="194.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="Mobile Number" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+      <VBox layoutX="367.0" layoutY="50.0" prefHeight="216.0" prefWidth="319.0">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="319.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="address" />
+                  <TextArea fx:id="txtAddress" layoutX="9.0" layoutY="16.0" onKeyReleased="#textField_KeyReleased" prefHeight="53.0" prefWidth="300.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtOlResult" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="25.0" prefWidth="242.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="O/L result" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtALResult" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="25.0" prefWidth="242.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="A/L result" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="225.0" styleClass="textFieldPane" stylesheets="@assests/styles/Manage-Student.css">
+               <children>
+                  <TextField fx:id="txtEmail" layoutX="27.0" layoutY="4.0" onKeyReleased="#textField_KeyReleased" prefHeight="25.0" prefWidth="242.0" styleClass="textField" stylesheets="@assests/styles/Manage-Student.css" />
+                  <Label layoutX="14.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@assests/styles/Manage-Student.css" text="E-mail" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="34.0" layoutY="350.0" onAction="#updateOnAction" prefHeight="42.0" prefWidth="145.0" styleClass="register-Student-Button" stylesheets="@assests/styles/Manage-Student.css" text="Update Student" textFill="#2701ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="186.0" layoutY="350.0" prefHeight="42.0" prefWidth="153.0" styleClass="clear-Button" stylesheets="@assests/styles/Manage-Student.css" text="Clear All" textFill="#b91184">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCourse" layoutX="367.0" layoutY="314.0" prefHeight="125.0" prefWidth="319.0">
+        <columns>
+          <TableColumn prefWidth="194.0" text="Course name" />
+          <TableColumn prefWidth="124.0" text="Remove" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmdCourse" layoutX="367.0" layoutY="276.0" prefHeight="27.0" prefWidth="184.0" promptText="course " styleClass="combo-box" stylesheets="@assests/styles/Manage-Student.css" />
+      <JFXButton fx:id="btnRegister1" buttonType="RAISED" layoutX="568.0" layoutY="276.0" onAction="#addCourseOnAction" prefHeight="27.0" prefWidth="118.0" styleClass="register-Student-Button" stylesheets="@assests/styles/Manage-Student.css" text="Add Course" textFill="#2701ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow height="0.0" radius="0.0" width="0.0" />
+   </effect>
+</AnchorPane>
