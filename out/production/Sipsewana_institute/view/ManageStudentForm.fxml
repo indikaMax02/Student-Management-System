@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageStudentPane" prefHeight="457.0" prefWidth="733.0" styleClass="register-Student-Form" stylesheets="@assests/styles/Manage_Course.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageStudentFormController">
+   <effect>
+      <DropShadow height="0.0" radius="0.0" width="0.0" />
+   </effect>
+   <children>
+      <TableView fx:id="tblStudent" editable="true" layoutX="34.0" layoutY="135.0" prefHeight="283.0" prefWidth="665.0">
+        <columns>
+          <TableColumn prefWidth="114.0" text="Student_Id" />
+          <TableColumn prefWidth="142.0" text="Student_Name" />
+            <TableColumn prefWidth="115.0" text="nic" />
+            <TableColumn prefWidth="122.0" text="dateOfBirth" />
+            <TableColumn prefWidth="122.0" text="gender" />
+            <TableColumn prefWidth="122.0" text="parentName" />
+            <TableColumn prefWidth="122.0" text="mobile" />
+            <TableColumn prefWidth="122.0" text="address" />
+            <TableColumn prefWidth="122.0" text="ol_result" />
+            <TableColumn prefWidth="122.0" text="al_result" />
+            <TableColumn prefWidth="122.0" text="email" />
+            <TableColumn prefWidth="122.0" text="metaData" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="33.0" layoutY="33.0" prefHeight="25.0" prefWidth="258.0" promptText="Search here" />
+      <ComboBox fx:id="cmbCourses" layoutX="133.0" layoutY="67.0" onMouseClicked="#cmbCourseMouseCliked" onTouchPressed="#cmbCourseTouch" prefHeight="25.0" prefWidth="157.0" />
+      <JFXButton layoutX="33.0" layoutY="101.0" onAction="#searchOnAction" prefHeight="25.0" prefWidth="258.0" styleClass="search_Button" stylesheets="@assests/styles/Manage_Course.css" text="Search" />
+      <JFXButton layoutX="118.0" layoutY="422.0" onAction="#updateOnAction" prefHeight="25.0" prefWidth="228.0" styleClass="update-Button" stylesheets="@assests/styles/Manage-Student.css" text="Update" />
+      <JFXButton layoutX="411.0" layoutY="422.0" onAction="#deleteOnAction" prefHeight="25.0" prefWidth="228.0" styleClass="register-Student-Button" stylesheets="@assests/styles/Manage-Student.css" text="Delete" />
+      <RadioButton fx:id="idRadio" layoutX="34.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#idRadioButtonOnMouseClicked" text="id " />
+      <RadioButton fx:id="nameRadio" layoutX="77.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#nameRadioButtonOnMouseClicked" text="name" />
+      <TableView fx:id="tblCourse" layoutX="312.0" layoutY="29.0" prefHeight="96.0" prefWidth="387.0">
+        <columns>
+          <TableColumn prefWidth="103.0" text="Batch Number" />
+            <TableColumn prefWidth="138.0" text="Student_Courses" />
+            <TableColumn prefWidth="145.0" text="Regiter Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

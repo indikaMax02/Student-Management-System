@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="953.0" styleClass="background" stylesheets="@assests/styles/main-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Pane prefHeight="516.0" prefWidth="211.0" styleClass="navBar" stylesheets="@assests/styles/main-form.css">
+         <children>
+            <Separator layoutY="79.0" prefHeight="3.0" prefWidth="195.0" />
+            <Separator layoutY="443.0" prefHeight="3.0" prefWidth="195.0" />
+            <Label layoutX="52.0" layoutY="460.0" text="VERSION 1.0.0" textFill="WHITE">
+               <font>
+                  <Font name="SimSun" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="908.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/icons8-close-128.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="18.0" layoutY="106.0" prefHeight="336.0" prefWidth="189.0">
+         <children>
+            <Pane fx:id="dashBoardPane" prefHeight="39.0" prefWidth="189.0" styleClass="navOption">
+               <effect>
+                  <DropShadow color="#0000005b" height="24.72" offsetY="2.0" radius="5.68" width="0.0" />
+               </effect>
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/images/icons8-dashboard-50.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" layoutY="12.0" text="DASHBOARD" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="regiterPane" onMouseClicked="#registerOnAction" prefHeight="39.0" prefWidth="189.0" styleClass="navOption1">
+               <effect>
+                  <DropShadow color="#0000005b" height="24.72" offsetY="2.0" radius="5.68" width="0.0" />
+               </effect>
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="48.0" layoutY="11.0" prefHeight="17.0" prefWidth="68.0" text="REGISTOR" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/images/register.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="manageCoursePane" onMouseClicked="#ManageCourseOnAction" prefHeight="39.0" prefWidth="189.0" styleClass="navOption1">
+               <effect>
+                  <DropShadow color="#0000005b" height="24.72" offsetY="2.0" radius="5.68" width="0.0" />
+               </effect>
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+               <children>
+                  <Label layoutX="46.0" layoutY="11.0" prefHeight="17.0" prefWidth="129.0" text="MANAGE COURSE" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/images/register.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="manageStudentPane" onMouseClicked="#manageStudentOnAction" prefHeight="39.0" prefWidth="189.0" styleClass="navOption1">
+               <effect>
+                  <DropShadow color="#0000005b" height="24.72" offsetY="2.0" radius="5.68" width="0.0" />
+               </effect>
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+               <children>
+                  <Label layoutX="45.0" layoutY="11.0" prefHeight="17.0" prefWidth="129.0" text="MANAGE STUDENT" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/images/register.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="196.0" prefHeight="516.0" prefWidth="17.0" style="-fx-background-color: #f4f4f4;">
+         <children>
+            <Pane layoutX="6.0" prefHeight="516.0" prefWidth="7.0" style="-fx-background-color: #02B2FE;" />
+         </children>
+      </Pane>
+      <Label layoutX="248.0" layoutY="14.0" stylesheets="@assests/styles/main-form.css" text="Sipsewana Institute" textFill="#0d00ff">
+         <font>
+            <Font name="Bullpen 3D" size="24.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="dashboardStackPane" layoutX="216.0" layoutY="55.0" prefHeight="457.0" prefWidth="733.0" />
+      <Label layoutX="593.0" layoutY="22.0" text="00 : 00 : 00">
+         <font>
+            <Font name="Turret Road ExtraBold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="724.0" layoutY="22.0" text="2022/01/03">
+         <font>
+            <Font name="Turret Road ExtraBold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

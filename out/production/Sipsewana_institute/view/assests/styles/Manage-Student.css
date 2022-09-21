@@ -1,0 +1,42 @@
+.textFieldPane{
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+}
+.textField{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+.textLabel{
+    -fx-background-color: whitesmoke;
+    -fx-border-color: transparent;
+}
+
+.combo-box{
+    -fx-border-color: transparent;
+}
+
+.text-area{
+    -fx-border-color: whitesmoke;
+    -fx-border-color: black;
+
+}
+
+.register-Student-Button{
+    -fx-background-color: linear-gradient(to left top, #afe0d6, #08b2e5);
+    -fx-background-radius: 20px;
+}
+.clear-Button{
+    -fx-background-color: linear-gradient(to left top, #ecdfdf, #dc40fc);
+    -fx-background-radius: 20px;
+}
+
+.update-Button{
+    -fx-background-color: linear-gradient(to left top, #eedfdf, #d23ff5);
+    -fx-background-radius: 20px;
+}
+
+.register-Student-Form{
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}

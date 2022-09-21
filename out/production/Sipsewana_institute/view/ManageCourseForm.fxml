@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="457.0" prefWidth="733.0" styleClass="register-Student-Form" stylesheets="@assests/styles/Manage_Course.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageCourseFormController">
+   <effect>
+      <DropShadow height="0.0" radius="0.0" width="0.0" />
+   </effect>
+   <children>
+      <TableView fx:id="tblCourses" layoutX="34.0" layoutY="206.0" prefHeight="218.0" prefWidth="650.0">
+        <columns>
+          <TableColumn prefWidth="114.0" text="Program ID" />
+          <TableColumn prefWidth="115.0" text="Batch_Number" />
+            <TableColumn prefWidth="118.0" text="Program" />
+            <TableColumn prefWidth="126.0" text="Number_of_sheets" />
+            <TableColumn prefWidth="89.0" text="Duration" />
+            <TableColumn prefWidth="89.0" text="Fee(LKR)" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="34.0" layoutY="38.0" prefHeight="25.0" prefWidth="282.0" promptText="Program ID" />
+      <TextField fx:id="txtProgram" layoutX="34.0" layoutY="105.0" prefHeight="25.0" prefWidth="282.0" promptText="Program" />
+      <TextField fx:id="txtDuration" layoutX="346.0" layoutY="38.0" prefHeight="25.0" prefWidth="282.0" promptText="Duration" />
+      <TextField fx:id="txtfee" layoutX="346.0" layoutY="70.0" prefHeight="25.0" prefWidth="282.0" promptText="Fee" />
+      <JFXButton layoutX="346.0" layoutY="105.0" onAction="#addCourseOnAction" prefHeight="25.0" prefWidth="242.0" styleClass="search_Button" stylesheets="@assests/styles/Manage_Course.css" text="Add Course" />
+      <JFXButton layoutX="346.0" layoutY="173.0" onAction="#updateCourseOnAction" prefHeight="25.0" prefWidth="242.0" styleClass="search_Button" stylesheets="@assests/styles/Manage_Course.css" text="Update Course" />
+      <JFXButton layoutX="346.0" layoutY="136.0" onAction="#SelectCourseOnAction" prefHeight="25.0" prefWidth="242.0" styleClass="search_Button" stylesheets="@assests/styles/Manage_Course.css" text="Select Course" />
+      <TextField fx:id="txtBatchNumber" layoutX="34.0" layoutY="70.0" prefHeight="25.0" prefWidth="282.0" promptText="BatchNumber" />
+      <TextField fx:id="txtNumberOfSheet" layoutX="34.0" layoutY="148.0" prefHeight="25.0" prefWidth="282.0" promptText="Number_of_Sheets" />
+   </children>
+</AnchorPane>
